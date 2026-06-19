@@ -74,16 +74,18 @@ nav ul li a:hover{
     border:1px solid #d9d9d9;
     background:#f8edcc;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
+    gap:20px;
     padding:20px;
 }
-
 /* IMAGEN */
 
-.imagen{
-    width:45%;
-    text-align:center;
-}
+.imagen img{
+    width:400px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}     
 
 .imagen img{
     width:90%;
@@ -93,29 +95,16 @@ nav ul li a:hover{
 /* PUNTOS */
 
 .puntos{
-    margin-top:15px;
-}
-
-.puntos span{
-    width:10px;
-    height:10px;
-    border:1px solid #ccc;
-    border-radius:50%;
-    display:inline-block;
-    margin:0 4px;
-}
-
-.puntos .activo{
-    background:black;
+    display:none;
 }
 
 /* TEXTO */
 
 .texto{
     width:55%;
-    padding-left:20px;
-    color:#555;
-}
+    position:relative;
+    z-index:2;
+}   
 
 .texto h2{
     color:#000000;
@@ -165,6 +154,28 @@ nav a{
     object-fit: cover;
     border-radius: 8px;
 }
+.imagen {
+    position: relative;
+    z-index: 1;
+}
+.texto {
+    position: relative;
+    z-index: 2;
+}
+.puntos span{
+    width:10px;
+    height:10px;
+    border:1px solid #ccc;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.puntos span:hover{
+    transform:scale(1.3);
+}   
 footer{
     margin-top:40px;
     width:100%;

@@ -5,7 +5,7 @@ const imagenes = [
     "img/centollo4.jpg",
     "img/centollo5.jpg"
 ];
-
+    
 const slider = document.getElementById("slider");
 const puntos = document.querySelectorAll(".punto");
 
@@ -43,3 +43,29 @@ window.onclick = function(event){
         modal.style.display = "none";
     }
 };
+function mostrarInfo(tipo){
+
+    switch(tipo){
+
+        case "historia":
+            alert("El Centollo cuenta con más de 100 años de experiencia ofreciendo productos del mar.");
+        break;
+
+        case "fresco":
+            alert("Seleccionamos diariamente los pescados y mariscos más frescos.");
+        break;
+
+        case "ahumados":
+            alert("Nuestros ahumados se elaboran mediante procesos artesanales tradicionales.");
+        break;
+
+        case "tienda":
+            window.location.href = "contacto.html";
+        break;
+
+        case "seleccion":
+            alert("Nuestro equipo selecciona los mejores productos para nuestros clientes.");
+        break;
+
+    }
+}
