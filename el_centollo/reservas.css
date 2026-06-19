@@ -1,0 +1,230 @@
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#555;
+}
+
+/* HEADER */
+
+header{
+    background:#f6f6fa;
+}
+
+#logo{
+    width:350px;
+    margin:auto;
+    text-align:center;
+    padding:10px 0;
+}
+
+#logo img{
+    width:90px;
+    display:block;
+    margin:auto;
+}
+
+#logo h1{
+    font-family:'Pacifico', cursive;
+    font-size:50px;
+    color:#000;
+    margin-top:-10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#11131a;
+    height:60px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+nav li{
+    margin:0 25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    padding:10px;
+}
+
+nav a:hover{
+    background:#929fb3;
+}
+
+/* TÍTULO */
+
+.titulo-reservas{
+    background:#f8edcc;
+    text-align:center;
+    padding:50px 20px;
+    border:1px solid #d9d9d9;
+}
+
+.titulo-reservas h2{
+    font-size:48px;
+    color:#000;
+    margin-bottom:15px;
+}
+
+.titulo-reservas p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-reserva{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* INFORMACIÓN */
+
+.info-reserva{
+    width:35%;
+    background:#f8edcc;
+    border:1px solid #d9d9d9;
+    padding:25px;
+}
+
+.info-reserva h3{
+    font-size:32px;
+    color:#000;
+    margin-bottom:15px;
+}
+
+.info-reserva p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.info-reserva ul{
+    padding-left:20px;
+}
+
+.info-reserva li{
+    margin-bottom:12px;
+}
+
+/* FORMULARIO */
+
+.formulario-reserva{
+    width:65%;
+    background:#f8edcc;
+    border:1px solid #d9d9d9;
+    padding:25px;
+    min-height:500px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+}
+
+.footer-top{
+    background:#11131a;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:30px 20px;
+}
+
+.footer-box{
+    width:180px;
+    text-align:center;
+    margin:10px;
+}
+
+.footer-box h3{
+    color:#6fd18a;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.footer-box p{
+    color:#d9d9d9;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.footer-bottom{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+}
+
+.contacto-footer{
+    color:#5bbf73;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+.redes{
+    font-size:16px;
+    font-weight:bold;
+    color:#333;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        height:auto;
+    }
+
+    nav ul{
+        flex-direction:column;
+        padding:10px 0;
+    }
+
+    nav li{
+        margin:8px 0;
+    }
+
+    .contenedor-reserva{
+        flex-direction:column;
+    }
+
+    .info-reserva,
+    .formulario-reserva{
+        width:100%;
+    }
+
+    .titulo-reservas h2{
+        font-size:36px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+}
