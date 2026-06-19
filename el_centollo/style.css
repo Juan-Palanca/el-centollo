@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background:#f6f6fa;
+}
+
+#logo{
+    width:350px;
+    margin:auto;
+    text-align:center;
+    padding:10px 0;
+}
+
+#logo img{
+    width:90px;
+    display:block;
+    margin:auto;
+}
+
+#logo h1{
+    font-family:'Pacifico', cursive;
+    font-size:50px;
+    color:#000;
+    margin-top:-10px;
+}
+/* MENU */
+
+nav{
+    background:#11131a;
+    height:60px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+}
+
+nav ul li a:hover{
+    background:#929fb3;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto;
+    border:1px solid #d9d9d9;
+    background:#f8edcc;
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding:20px;
+}
+/* IMAGEN */
+
+.imagen img{
+    width:400px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}     
+
+.imagen img{
+    width:90%;
+    max-width:400px;
+}
+
+/* PUNTOS */
+
+.puntos{
+    display:none;
+}
+
+/* TEXTO */
+
+.texto{
+    width:55%;
+    position:relative;
+    z-index:2;
+}   
+
+.texto h2{
+    color:#000000;
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.texto p{
+    line-height:1.7;
+    margin:10px 0;
+}
+
+.texto hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:15px 0;
+}
+
+strong{
+    color:#444;
+}
+nav{
+    background:#0f1117;
+    height:60px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+nav li{
+    margin:0 25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+.plato img{
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.imagen {
+    position: relative;
+    z-index: 1;
+}
+.texto {
+    position: relative;
+    z-index: 2;
+}
+.puntos span{
+    width:10px;
+    height:10px;
+    border:1px solid #ccc;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.puntos span:hover{
+    transform:scale(1.3);
+}   
+footer{
+    margin-top:40px;
+    width:100%;
+}
+
+/* PARTE NEGRA SUPERIOR */
+
+.footer-top{
+    background:#1a1a1a;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.footer-box{
+    flex:1;
+    padding:0 10px;
+}
+
+.footer-box i{
+    font-size:42px;
+    color:#2f9d58;
+    margin-bottom:12px;
+}
+
+.footer-box h3{
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.footer-box p{
+    color:#d0d0d0;
+    font-size:12px;
+    line-height:1.5;
+}
+
+/* PARTE BLANCA INFERIOR */
+
+.footer-bottom{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.contacto-footer{
+    color:#7bc67e;
+    font-size:16px;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+/* REDES */
+
+.redes a{
+    display:inline-block;
+    margin-left:8px;
+    font-size:30px;
+    transition:.3s;
+}
+
+.redes a:hover{
+    transform:translateY(-3px);
+}
+
+.fa-facebook-f{
+    color:#1877f2;
+}
+
+.fa-twitter{
+    color:#1da1f2;
+}
+
+.fa-instagram{
+    color:#e1306c;
+}
+
+.fa-whatsapp{
+    color:#25d366;
+}
+
+.fa-youtube{
+    color:#ff0000;
+}
